@@ -5,23 +5,26 @@ cd path/to/your/project
 git init
 
 3. Create a new file to store session notes.
-touch shell-and-git/session1.md
+touch folder-name/file-name
+or if you are in the folder so just.
+touch file-name
 
 4. Check the status of the repository to see untracked files.
 git status
 
 5. Stage the new file to be tracked by Git.
-git add shell-and-git/session1.md
-# Or to add all files at once:
+git add folder-name/file-name
+
+### Or to add all files at once:
 git add .
 
 6. Commit the changes with a meaningful message.
 git commit -m "Add session1.md with initial notes"
 
 7. Create a new remote repository on GitHub.
-# Go to GitHub and create a new repository (don't add a README or license).
+## Go to GitHub and create a new repository (don't add a README or license).
 
-8. Link the local repository to the remote GitHub repository.
+8. Link the local repository to the remote GitHub repository (ssh).
 git remote add origin git@github.com:your-username/repository-name.git
 
 9. Push the local commits to GitHub.
@@ -31,6 +34,7 @@ git push -u origin main
 # Visit your repository page on GitHub.
 
 11. Continue working and commit new changes frequently.
-git add .
-git commit -m "Update session notes"
-git push origin main
+git add .  .
+
+git commit -m "Update session notes"  .
+git push origin main  .
